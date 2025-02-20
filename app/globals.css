@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@layer base {
+  :root {
+    --background: 217 100% 97%;
+    --foreground: 222 47% 11%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 199 89% 48%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --accent: 316 70% 43%;
+    --accent-foreground: 210 40% 98%;
+    
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 83% 53%;
+    
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-gradient-to-b from-[#1a1f35] to-[#0c1322] min-h-screen text-foreground;
+  }
+}
+
+.wheel-segment {
+  clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%);
+  transform-origin: 0% 50%;
+}
+
+.wheel-gradient {
+  background: linear-gradient(45deg, 
+    hsl(var(--primary)) 0%,
+    hsl(var(--secondary)) 50%,
+    hsl(var(--accent)) 100%
+  );
+}

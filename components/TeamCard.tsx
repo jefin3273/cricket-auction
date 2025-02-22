@@ -35,7 +35,7 @@ export const TeamCard: React.FC<TeamCardProps> = ({ team }) => {
         </div>
 
         <div className="flex items-center gap-3">
-          <div className="relative w-12 h-12 rounded-full overflow-hidden">
+          <div className="relative w-40 h-40 rounded-full overflow-hidden">
             <Image
               src={team.captain.image}
               alt={team.captain.name}

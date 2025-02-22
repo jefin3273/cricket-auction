@@ -25,12 +25,12 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({ player, amount }) => {
       exit={{ opacity: 0, y: -20 }}
       className="bg-card rounded-lg overflow-hidden shadow-lg border border-border"
     >
-      <div className="relative h-48 w-full">
+      <div className="relative h-96 w-full">
         <Image
           src={getDirectImageUrl(player.image)}
           alt={player.name}
           fill
-          className="object-cover"
+          className="object-contain"
         />
         {amount && (
           <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-2">

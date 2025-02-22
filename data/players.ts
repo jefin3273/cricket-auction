@@ -186,7 +186,7 @@ export const initialPlayers: Player[] = [
      {
       "id": "27",
       "name": "Manesh Nair",
-      "image": "/IMG_1107 - manesh nair.heif",
+      "image": "/Manesh.jpg",
       "basePrice": 100000,
       "status": "available"
      },
@@ -284,7 +284,7 @@ export const initialPlayers: Player[] = [
      {
       "id": "41",
       "name": "Prasad Sawant",
-      "image": "/IMG_6108 - Prasad Sawant.jpg",
+      "image": "/IMG_6108 - Prasad Sawant.jpeg",
       "basePrice": 100000,
       "status": "available"
      },
@@ -326,7 +326,7 @@ export const initialPlayers: Player[] = [
      {
       "id": "47",
       "name": "Aakash Salian",
-      "image": "/IMG_2416 - Aakash Salian.jpg",
+      "image": "/IMG_2416 - Aakash Salian.jpeg",
       "basePrice": 100000,
       "status": "available"
      },
@@ -494,7 +494,7 @@ export const initialPlayers: Player[] = [
      {
       "id": "71",
       "name": "Aman Kanchan",
-      "image": "/IMG_2496 - aman kanchan.jpg",
+      "image": "/IMG_2496 - aman kanchan.jpeg",
       "basePrice": 100000,
       "status": "available"
      },

@@ -270,7 +270,7 @@ export const initialPlayers: Player[] = [
      {
       "id": "39",
       "name": "Parag Iswalkar",
-      "image": "/dummy.jpg",
+      "image": "/parag.jpeg",
       "basePrice": 100000,
       "status": "available"
      },
@@ -311,8 +311,8 @@ export const initialPlayers: Player[] = [
      },
      {
       "id": "45",
-      "name": "Ariv Vast",
-      "image": "/dummy.jpg",
+      "name": "Aariv Vast",
+      "image": "/Aariv.jpeg",
       "basePrice": 100000,
       "status": "available"
      },

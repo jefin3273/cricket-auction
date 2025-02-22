@@ -72,7 +72,7 @@ export default function Home() {
           className="text-center space-y-4"
         >
           <h1 className="text-5xl font-bold bg-gradient-to-r from-primary via-secondary to-accent text-transparent bg-clip-text">
-            Cricket Auction 2024
+            Cricket Auction 2025
           </h1>
           <p className="text-muted-foreground">
             {players.length} Players Available • {teams.length} Teams • Total

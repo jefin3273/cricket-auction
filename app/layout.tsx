@@ -1,12 +1,12 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Cricket Auction 2024',
-  description: 'A real-time cricket auction platform',
+  title: "Cricket Auction 2025",
+  description: "A real-time cricket auction platform",
 };
 
 export default function RootLayout({

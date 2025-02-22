@@ -11,6 +11,12 @@ interface PlayerCardProps {
   amount?: number;
 }
 
+// Function to convert Google Drive link to direct URL
+const getDirectImageUrl = (url: string) => {
+  const match = url.match(/[-\w]{25,}/);
+  return match ? `https://drive.google.com/uc?export=view&id=${match[0]}` : url;
+};
+
 export const PlayerCard: React.FC<PlayerCardProps> = ({ player, amount }) => {
   return (
     <motion.div
@@ -21,7 +27,7 @@ export const PlayerCard: React.FC<PlayerCardProps> = ({ player, amount }) => {
     >
       <div className="relative h-48 w-full">
         <Image
-          src={player.image}
+          src={getDirectImageUrl(player.image)}
           alt={player.name}
           fill
           className="object-cover"

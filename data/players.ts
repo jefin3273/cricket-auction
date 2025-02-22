@@ -1,406 +1,597 @@
 import { Player, Team } from '@/types';
 
 export const initialPlayers: Player[] = [
-  {
-    id: "1",
-    "name": "Girish Anandan ",
-    "image": "https://drive.google.com/open?id=1SMp-P6aQ6AX4Vj8eVKOG8IbOfDFLa6ct",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "2",
-    "name": "Milton Fernandes",
-    "image": "https://drive.google.com/open?id=1n_zZh7cSzQhwlW4itVuwyrUOmqFF5xeF",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id:"3",
-    "name": "Gautam Gokhale",
-    "image": "https://drive.google.com/open?id=1LyOoGZDbDSjPx_UehxkpOHl2AtrSQKRZ",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "4",
-    "name": "Pushkar Koltharkar",
-    "image": "https://drive.google.com/open?id=1hPDPSRk8uZhl8i3KCTWXdlZ94LvYgc4c",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "5",
-    "name": "Mukesh Vast",
-    "image":"null",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "6",
-    "name": "Aariv Vast",
-    "image":"null",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "7",
-    "name": "Aniket Tawde ",
-    "image":"null",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "8",
-    "name": "Sumeet Shirke",
-    "image": "https://drive.google.com/open?id=1DOTGT5jaiWiUpi6V0-CRDv_43xnoo1ZG",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "9",
-    "name": "Prasad Sawant",
-    "image": "https://drive.google.com/open?id=1Idbz4K9D_AWIo7ssSgD2ZWU0DDpZ6N-S",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "10",
-    "name": "Parag Iswalkar",
-    "image":"null",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "11",
-    "name": "Arjun Iswalkar",
-    "image": "https://drive.google.com/open?id=1VJyluXVsDvbt7fiFE9byo6FeYFMObZLh",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "12",
-    "name": "Vedant Bochare ",
-    "image": "https://drive.google.com/open?id=1jibQWRriilwzFqZvv3balQJujCpPkWSP",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "13",
-    "name": "Sagar Patankar ",
-    "image": "https://drive.google.com/open?id=1Q4426I8zYIc_E0o9dPoBDcGh7qw6F6yR",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "14",
-    "name": "Rajesh Patankar ",
-    "image": "https://drive.google.com/open?id=1FTfK5Lbg1khHDve-gMGsO1jP8PtSmjcD",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "15",
-    "name": "Aman",
-    "image": "https://drive.google.com/open?id=1OHQyetZij_iy-9bDxIS1jVoGqNClljiZ",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "16",
-    "name": "Om Ratnaparkhi",
-    "image": "https://drive.google.com/open?id=18O_Ixwfn3JKB1lR0bRCaTO21C_D4qaDd",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "17",
-    "name": "Tejas Shetty ",
-    "image": "https://drive.google.com/open?id=1MRRo0vnlyWDHiKq7meCxNlKPcDWpBzR5",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "18",
-    "name": "Praveen More",
-    "image": "https://drive.google.com/open?id=1gkkQBsSeia9fRhYvtsmcuroRzSOpBeRO",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "19",
-    "name": "Dhruv Khedkar ",
-    "image": "https://drive.google.com/open?id=1xCv9vzTkqw2hKwwkAitmGlYzXKs-zzBA",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "20",
-    "name": "Abhishek Agarwal ",
-    "image": "https://drive.google.com/open?id=1hXLy4o5ZuHp8whXJ99_dFMthGmRWjc_B",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "21",
-    "name": "Pankaj",
-    "image": "https://drive.google.com/open?id=1yLe2DfuKbzt9U3pqs6hw-eORJR9U9FIl",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "22",
-    "name": "Calvin Fernandes ",
-    "image": "https://drive.google.com/open?id=1V5JgSFpIy5l4ARDIvK3YmLNijfjBAptt",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "23",
-    "name": "Shanataram Ydav",
-    "image": "https://drive.google.com/open?id=1i2WN5fWduQ5Kj9FlY7PP6WRvQHGjtqcd",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "24",
-    "name": "Pratik Desai",
-    "image": "https://drive.google.com/open?id=1z8ieaFr6JoFFXn0hl4gg6_IYoJsxAMuP",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "25",
-    "name": "Ketan Ganu",
-    "image": "https://drive.google.com/open?id=1GYR7Bi9dY-qJVBSh69hv6yPXQd9mZBdm",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "26",
-    "name": "Manesh Nair",
-    "image": "https://drive.google.com/open?id=1Yi2tS87IBCVHo6F2JcHDyuCKDOu1OXox",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "27",
-    "name": "Ved Vinchhi ",
-    "image": "https://drive.google.com/open?id=1ZC51VO_4MeeecrFsdAeHUSv1DFk3JPxt",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "28",
-    "name": "Rohit Singh",
-    "image": "https://drive.google.com/open?id=1Dc_oYrAnvfgOkO1Hspo4zt1Qsv_0bkTT",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "29",
-    "name": "Miit vinchhi",
-    "image": "https://drive.google.com/open?id=1wXv2r-vQBkKJ66oe02JpwRN8p1ZW8Npw",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "30",
-    "name": "Sahil Kamulkar ",
-    "image": "https://drive.google.com/open?id=1pSo004I-qe90-It3OFv11-4vzrQW9mx4",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "31",
-    "name": "Amit Mohite",
-    "image": "https://drive.google.com/open?id=1Z_IfWQOk4lY9IYOHFBSzcpsQ7TCKBGO8",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "32",
-    "name": "Jefin John",
-    "image": "https://drive.google.com/open?id=1p6Nd8n9htbLclTjEueZvFZ3wVmDvjzjx",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "33",
-    "name": "Soham Redkar",
-    "image": "https://drive.google.com/open?id=1DoC7mUjoS0XHIMkiMJ-hbS5PGxMbSSlV",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "34",
-    "name": "Pritish Mahajan",
-    "image": "https://drive.google.com/open?id=1qW6jOE30uoZmZFClZlKaO4aWLzR4Tqqv",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "35",
-    "name": "Vishal Sankhe",
-    "image": "https://drive.google.com/open?id=1B2gP8dPBrdDA1_VT0GUS2BWNomX3OlMG",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "36",
-    "name": "Jaypaul Reddy",
-    "image": "https://drive.google.com/open?id=1NP34OM-m2RbDoFVfZYGAPdrY_N8EGpdC",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "37",
-    "name": "रमेश जाधव ",
-    "image": "https://drive.google.com/open?id=1xc0qoj95A-IlL4fBiaY6ovLdDYsZRheB",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "38",
-    "name": "S Adinarayanan",
-    "image": "https://drive.google.com/open?id=19fzm1Y91Ntlqk9oRVnQ_lAAjkxJBHc8k",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "39",
-    "name": "Vineet More",
-    "image":"null",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "40",
-    "name": "Tejas Jobanputra",
-    "image": "https://drive.google.com/open?id=1InOkIvr0rlTQJdAwYBIyZ6-oLBHJN6Le",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "41",
-    "name": "Yohanan fernandes",
-    "image": "https://drive.google.com/open?id=1LQQai8mNVsbVbcjC7t302lCaB7L27Rsc",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "42",
-    "name": "Mandar Mapuskar",
-    "image":"null",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "43",
-    "name": "Darryl Fernando ",
-    "image": "https://drive.google.com/open?id=1ZsB_xPmZLNy6kBDUETLJ1lZbX32yibOo",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "44",
-    "name": "Deepak Patil",
-    "image": "https://drive.google.com/open?id=1j9C8Ny-o-dZXjImWgE-IBI7gYyG-ZwCx",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "45",
-    "name": "Amit Kawle",
-    "image": "https://drive.google.com/open?id=1PcvEFjaXEhqpRBPWP5Lw21Swd3r4W23m",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "46",
-    "name": "Sachinkumar Thorat",
-    "image": "https://drive.google.com/open?id=1L0udk4TiWGIZZdiZaUEJqSmUWxGAHrGT",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "47",
-    "name": "Mustafa Master",
-    "image": "https://drive.google.com/open?id=1joxddN1K_hpEqcczx6hdI84Jb0L2V4qL",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "48",
-    "name": "Susheel Patil",
-    "image": "https://drive.google.com/open?id=1mTPZwFOdJif9JAewywz__x921rFH7hum",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "49",
-    "name": "Ritwik Shetty",
-    "image": "https://drive.google.com/open?id=1py_VrXxTjJPNGomadaq-8ZbUS76Prz_n",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "50",
-    "name": "Rahul Chavan ",
-    "image": "https://drive.google.com/open?id=1NueJ0Cu3ykYpQlzmIhN_T0eRTuPszzus",
-    "basePrice": 100000,
-    "status": "available"
-   },
-   {
-    id: "51",
-    "name": "Murli",
-    "image": "https://drive.google.com/open?id=1IwAN8ECssu1GY_I_UZfO2JoGNLRrCJ0n",
-    "basePrice": 100000,
-    "status": "available"
-   }
+     {
+      "id": "1",
+      "name": "Murli",
+      "image": "/murli.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "2",
+      "name": "Rahul Chavan",
+      "image": "/rahul_chavan.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "3",
+      "name": "Susheel Patil",
+      "image": "/susheel_patil.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "4",
+      "name": "Ritwik Shetty",
+      "image": "/ritwik_shetty.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "5",
+      "name": "Mustafa M",
+      "image": "/mustafa_m.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "6",
+      "name": "Sachin Thorat",
+      "image": "/sachin_thorat.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "7",
+      "name": "Vineet More",
+      "image": "/vineet_more.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "8",
+      "name": "Amit Kawale",
+      "image": "/amit_kawale.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "9",
+      "name": "Deepak Patil",
+      "image": "/deepak_patil.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "10",
+      "name": "Darryl Fernando",
+      "image": "/darryl_fernando.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "11",
+      "name": "Mandar Mhapuskar",
+      "image": "/Mandar Mapuskar - Mandar Mapuskar.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "12",
+      "name": "Yohan Fernandes",
+      "image": "/yohan.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "13",
+      "name": "Tejas Jobanputara",
+      "image": "/tejas_joban.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "14",
+      "name": "Seshan Adi",
+      "image": "/adinaray.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "15",
+      "name": "Ramesh Jadhav",
+      "image": "/ramesh.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "16",
+      "name": "Jaypaul Reddy",
+      "image": "/jaypaul.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "17",
+      "name": "Vishal Sankhe",
+      "image": "/vishal_sankhe.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "18",
+      "name": "Pritish Mahajan",
+      "image": "/IMG_1339 - Pritish Mahajan.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "19",
+      "name": "Shantaram Yadav",
+      "image": "/20240112_214812 - Shantaram Yadav - Skrillex Gaming.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "20",
+      "name": "Pushkar Koltharkar",
+      "image": "/pushkar.png",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "21",
+      "name": "Soham Redkar",
+      "image": "/soham_redkar.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "22",
+      "name": "Jefin John",
+      "image": "/jefin_john.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "23",
+      "name": "Amit Mohite",
+      "image": "/amit_mohite.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "24",
+      "name": "Sahil Kamulkar",
+      "image": "/sahil_kamul.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "25",
+      "name": "Miit Vinchi",
+      "image": "/miit_vinchi.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "26",
+      "name": "Vedu Vinchi",
+      "image": "/vedu_vinchi.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "27",
+      "name": "Manesh Nair",
+      "image": "/IMG_1107 - manesh nair.heif",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "28",
+      "name": "Ketan Ganu",
+      "image": "/IMG_2468 - KETAN GANU.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "29",
+      "name": "Pratik Desai",
+      "image": "/IMG_2798 - pratik desai.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "30",
+      "name": "Calvin Fernandes",
+      "image": "/calvin.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "31",
+      "name": "Tejas Shetty",
+      "image": "/tejas_shetty.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "32",
+      "name": "Praveen More",
+      "image": "/Praveen_More.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "33",
+      "name": "Abhishek Agarwal",
+      "image": "/abhishek.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "34",
+      "name": "Dhruv Khedkar",
+      "image": "/IMG_20250220_204157 - Dhruv Khedkar.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "35",
+      "name": "Vedant Bochare",
+      "image": "/20230602142510_IMG_2040 - Vedant Bochare.JPG",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "36",
+      "name": "Om Ratnaparkhi",
+      "image": "/IMG_20231216_204805 - Om Ratnaparkhi.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "37",
+      "name": "Sagar Patankar",
+      "image": "/sagar_patankar.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "38",
+      "name": "Rajesh Patankar",
+      "image": "/Rajesh_patankar.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "39",
+      "name": "Parag Iswalkar",
+      "image": "/dummy.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "40",
+      "name": "Arjun Iswalkar",
+      "image": "/arjun_isw.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "41",
+      "name": "Prasad Sawant",
+      "image": "/IMG_6108 - Prasad Sawant.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "42",
+      "name": "Sumeet Shirke",
+      "image": "/sumeet_shirke.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "43",
+      "name": "Aniket Tawade",
+      "image": "/dummy.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "44",
+      "name": "Mukesh Vast",
+      "image": "/dummy.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "45",
+      "name": "Ariv Vast",
+      "image": "/dummy.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "46",
+      "name": "Gautam Gokhale",
+      "image": "/gautam.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "47",
+      "name": "Aakash Salian",
+      "image": "/IMG_2416 - Aakash Salian.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "48",
+      "name": "Tanmay Mapuskar",
+      "image": "/Tanmay_Mhap.png",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "49",
+      "name": "Milton Fernandes",
+      "image": "/milton_fernandes.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "50",
+      "name": "Girish Anandan",
+      "image": "/IMG_20240202_153621 - girish anandan.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "51",
+      "name": "Vinayak Bochare",
+      "image": "/vinayak.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "52",
+      "name": "Avaneesh Kadam",
+      "image": "/avaneesh.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "53",
+      "name": "Rohit Singh",
+      "image": "/IMG_6076 - Rohit Singh.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "54",
+      "name": "Ritesh Singh",
+      "image": "/IMG_1502 - Ritesh Singh.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "55",
+      "name": "Sahil Shirke",
+      "image": "/Sahil.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "56",
+      "name": "Akshay Ahire",
+      "image": "/akshay_ahire.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "57",
+      "name": "Shawn Crasto",
+      "image": "/shawn.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "58",
+      "name": "Suraj Salian",
+      "image": "/IMG_20241216_093310 - Suraj J S.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "59",
+      "name": "Arnav Rajadhyaksha",
+      "image": "/arnav_raj.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "60",
+      "name": "Pritam Barapatre",
+      "image": "/pritam.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "61",
+      "name": "Movith Crasto",
+      "image": "/movith.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "62",
+      "name": "Deep Kalvikatte",
+      "image": "/Deep.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "63",
+      "name": "Sharvil",
+      "image": "/IMG_20250221_170211 - Sharvil 17.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "64",
+      "name": "Harsh Mhapsekar",
+      "image": "/harsh_mhap.jpeg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "65",
+      "name": "Jayden Dsouza",
+      "image": "/jayden.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "66",
+      "name": "Manish Nagwekar",
+      "image": "/manish_nag.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "67",
+      "name": "Bhushan Yadav",
+      "image": "/dummy.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "68",
+      "name": "Karan Shah",
+      "image": "/dummy.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "69",
+      "name": "Charles Rosario",
+      "image": "/Screenshot_20230501-123731_Gallery - Charles Rosario.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "70",
+      "name": "Raj Naik",
+      "image": "/IMG_20231006_145722_106 - Raj Naik.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "71",
+      "name": "Aman Kanchan",
+      "image": "/IMG_2496 - aman kanchan.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     },
+     {
+      "id": "72",
+      "name": "Sangam",
+      "image": "/20250218_111441 - Sangam.jpg",
+      "basePrice": 100000,
+      "status": "available"
+     }
 ];
 
 export const teams: Team[] = [
   {
     id: '1',
-    name: 'Team Alpha',
+    name: 'Team Chāvā (छावा)',
     captain: {
       id: '1',
-      name: 'Captain 1',
-      image: 'https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?w=800&auto=format&fit=crop'
+      name: 'Sachin Kadam',
+      image: '/sachin.jpeg'
     },
     purse: 10000000, // 1 Crore
     players: []
   },
   {
     id: '2',
-    name: 'Team Beta',
+    name: 'Team The Legends',
     captain: {
       id: '2',
-      name: 'Captain 2',
-      image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=800&auto=format&fit=crop'
+      name: 'Jedesh Kozhipalli',
+      image: '/jd.jpeg'
     },
     purse: 10000000, // 1 Crore
     players: []
   },
   {
     id: '3',
-    name: 'Team Gamma',
+    name: 'Team The Invaders',
     captain: {
       id: '3',
-      name: 'Captain 3',
-      image: 'https://images.unsplash.com/photo-1572631382906-180e9d6bad17?w=800&auto=format&fit=crop'
+      name: 'Paul Godinho',
+      image: '/paul.jpeg'
     },
     purse: 10000000, // 1 Crore
     players: []
   },
   {
     id: '4',
-    name: 'Team Delta',
+    name: 'Team The Swingers',
     captain: {
       id: '4',
-      name: 'Captain 4',
-      image: 'https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?w=800&auto=format&fit=crop'
+      name: 'Sharad Pawar',
+      image: '/sharad.jpeg'
+    },
+    purse: 10000000, // 1 Crore
+    players: []
+  },
+  {
+    id: '5',
+    name: 'The Park Panthers',
+    captain: {
+      id: '5',
+      name: 'Pratik Yande',
+      image: '/pratik.jpeg'
+    },
+    purse: 10000000, // 1 Crore
+    players: []
+  },
+  {
+    id: '6',
+    name: 'Team Royal Park Hurricanes',
+    captain: {
+      id: '6',
+      name: 'Gurunath Gawli',
+      image: '/guru.jpeg'
+    },
+    purse: 10000000, // 1 Crore
+    players: []
+  },
+  {
+    id: '7',
+    name: 'Team जगदंब',
+    captain: {
+      id: '7',
+      name: 'Rajesh Tawde',
+      image: '/rajesh.jpeg'
+    },
+    purse: 10000000, // 1 Crore
+    players: []
+  },
+  {
+    id: '8',
+    name: 'Team The Shiledars',
+    captain: {
+      id: '8',
+      name: 'Pankaj More',
+      image: '/pankag.jpeg'
     },
     purse: 10000000, // 1 Crore
     players: []
